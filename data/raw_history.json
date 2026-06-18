@@ -1,0 +1,32 @@
+[
+  {
+    "crisis_id": "hist_1973_oil",
+    "event": "1973 OAPEC Oil Embargo",
+    "context": "In October 1973, the Organization of Arab Petroleum Exporting Countries (OAPEC) proclaimed an oil embargo targeting nations perceived as supporting Israel during the Yom Kippur War. This caused crude oil prices to instantly quadruple from $3 to nearly $12 per barrel globally. This external systemic shock led to a prolonged period of stagflation—high inflation coupled with stagnant economic growth—across Western economies, forcing central banks to radically alter monetary policies.",
+    "metadata": {
+      "category": "Energy Shock",
+      "primary_commodity": "Crude Oil",
+      "macro_regime": "Stagflationary"
+    }
+  },
+  {
+    "crisis_id": "hist_2019_hormuz",
+    "event": "2019 Strait of Hormuz Tanker Attacks",
+    "context": "In May and June 2019, multiple commercial oil tankers were attacked near the Strait of Hormuz, a vital maritime choke-point through which 20% of global petroleum passes. Amidst escalating naval threats and structural insurance premiums spikes, Brent crude futures surged over 4% in a single day of trading. The event demonstrated how localized maritime operational friction instantly converts into global commodity supply-chain volatility premiums.",
+    "metadata": {
+      "category": "Maritime Conflict",
+      "primary_commodity": "Crude Oil",
+      "macro_regime": "High Volatility Supply Constraint"
+    }
+  },
+  {
+    "crisis_id": "hist_2022_ukraine",
+    "event": "2022 Russia-Ukraine Conflict Outbreak",
+    "context": "The escalation of military operations in Ukraine in February 2022 triggered comprehensive international economic sanctions against the Russian Federation. Because Russia is a massive exporter of natural gas, wheat, and nickel, global commodity indexes witnessed unprecedented vertical moves. European natural gas wholesale prices hit historic highs, and wheat futures spiked over 50% within weeks, accelerating global structural inflation pressures.",
+    "metadata": {
+      "category": "Geopolitical Warfare",
+      "primary_commodity": "Natural Gas & Agriculture",
+      "macro_regime": "Inflationary Supply Shock"
+    }
+  }
+]

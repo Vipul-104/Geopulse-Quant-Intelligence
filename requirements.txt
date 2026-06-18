@@ -1,0 +1,9 @@
+crewai
+langchain-openai
+fastapi
+uvicorn
+chromadb
+python-dotenv
+sentence-transformers
+pydantic
+gTTS
