@@ -1,9 +1,7 @@
 crewai
-langchain-openai
-fastapi
-uvicorn
 chromadb
-python-dotenv
 sentence-transformers
+python-dotenv
+streamlit
 pydantic
-gTTS
+plotly
