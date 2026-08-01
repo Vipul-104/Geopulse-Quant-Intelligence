@@ -283,15 +283,9 @@ The system includes 25 curated geopolitical crisis profiles spanning 1973–2024
 
 ---
 
-## 👥 Team
+## 👤 Author
 
-**AISSMS Institute of Information Technology — AI & Data Science**
-
-| Name | Roll No |
-|---|---|
-| Vipul Barmukh | A-08 |
-| Smriti Dharmadhikari | A-36 |
-| Sanjana Godse | A-37 |
+**Vipul Barmukh** 
 
 ---
 
