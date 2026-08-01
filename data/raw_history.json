@@ -1,0 +1,277 @@
+[
+  {
+    "crisis_id": "CRISIS_001",
+    "event": "1973 Arab Oil Embargo",
+    "context": "In October 1973, OAPEC nations led by Saudi Arabia imposed an oil embargo against the United States and Western Europe in response to US support for Israel during the Yom Kippur War. Crude oil prices quadrupled from $3 to nearly $12 per barrel within months. The embargo caused widespread fuel shortages, long queues at petrol stations, and triggered a global recession. Industries dependent on oil faced severe supply disruptions. The crisis fundamentally changed global energy policy and accelerated investment in alternative energy sources.",
+    "metadata": {
+      "category": "Energy",
+      "primary_commodity": "Crude Oil",
+      "macro_regime": "Stagflation, global recession, energy crisis",
+      "year": "1973"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_002",
+    "event": "1979 Iranian Revolution and Oil Crisis",
+    "context": "The Iranian Revolution in 1979 overthrew Shah Mohammad Reza Pahlavi and established an Islamic Republic under Ayatollah Khomeini. Iran's oil production collapsed from 6 million barrels per day to under 1.5 million barrels per day. Global oil prices doubled within a year, triggering the second major oil shock of the decade. The crisis exposed Western dependence on Middle Eastern oil and led to severe inflation and economic stagnation across developed economies. Strategic petroleum reserves were established by many nations as a direct response.",
+    "metadata": {
+      "category": "Energy",
+      "primary_commodity": "Crude Oil",
+      "macro_regime": "Oil shock, inflation spike, recession",
+      "year": "1979"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_003",
+    "event": "1990 Gulf War - Iraq Invasion of Kuwait",
+    "context": "Iraq's invasion of Kuwait in August 1990 removed approximately 4.3 million barrels per day of oil from global markets. Crude oil prices spiked from $17 to over $40 per barrel within weeks. The UN imposed comprehensive sanctions on Iraq, and a US-led coalition assembled to liberate Kuwait. Oil fields were set ablaze by retreating Iraqi forces causing massive environmental and supply damage. The crisis demonstrated how quickly geopolitical conflict could disrupt global energy markets and commodity supply chains.",
+    "metadata": {
+      "category": "Energy",
+      "primary_commodity": "Crude Oil",
+      "macro_regime": "Oil price spike, military conflict premium",
+      "year": "1990"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_004",
+    "event": "2001 September 11 Attacks",
+    "context": "The September 11 terrorist attacks on the United States caused immediate global financial market panic. Stock markets fell sharply with the Dow Jones losing nearly 1400 points in the first week of reopening. Gold surged as a safe haven asset while crude oil initially spiked on supply disruption fears before falling on demand collapse concerns. Aviation fuel demand collapsed as global air travel ground to a halt. The attacks triggered military interventions in Afghanistan and later Iraq, reshaping geopolitical risk premiums across all commodity markets for the next two decades.",
+    "metadata": {
+      "category": "Geopolitical Shock",
+      "primary_commodity": "Gold",
+      "macro_regime": "Safe haven surge, demand collapse, military premium",
+      "year": "2001"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_005",
+    "event": "2003 Iraq War",
+    "context": "The US-led invasion of Iraq in March 2003 removed one of the world's major oil producers from global markets. Prior to the invasion, markets priced in a significant geopolitical risk premium. Iraqi oil production, which stood at 2.5 million barrels per day before the war, was severely disrupted. Crude oil prices remained elevated throughout the conflict and subsequent insurgency. The war also affected natural gas markets and caused significant disruption to regional agricultural supply chains in the Middle East.",
+    "metadata": {
+      "category": "Energy",
+      "primary_commodity": "Crude Oil",
+      "macro_regime": "Geopolitical risk premium, supply disruption",
+      "year": "2003"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_006",
+    "event": "2005 Hurricane Katrina",
+    "context": "Hurricane Katrina devastated the US Gulf Coast in August 2005, destroying critical oil and natural gas infrastructure. The hurricane temporarily shut down 95% of oil production and 88% of natural gas production in the Gulf of Mexico. US crude oil prices surged above $70 per barrel for the first time in history. Refining capacity was severely disrupted, causing gasoline and diesel prices to spike across the United States. The disaster exposed the vulnerability of concentrated energy infrastructure to extreme weather events.",
+    "metadata": {
+      "category": "Natural Disaster",
+      "primary_commodity": "Crude Oil",
+      "macro_regime": "Supply shock, infrastructure disruption, energy price spike",
+      "year": "2005"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_007",
+    "event": "2008 Global Financial Crisis",
+    "context": "The collapse of Lehman Brothers in September 2008 triggered the worst global financial crisis since the Great Depression. Commodity markets experienced extreme volatility with crude oil crashing from $147 per barrel in July 2008 to under $35 by December. Base metals including copper, aluminum, and nickel fell 50-70% from peak prices. Agricultural commodities also declined sharply as demand expectations collapsed. Gold initially fell with forced selling before recovering as the premier safe haven asset. The crisis reshaped commodity market structure and risk management practices globally.",
+    "metadata": {
+      "category": "Financial Crisis",
+      "primary_commodity": "Crude Oil",
+      "macro_regime": "Demand collapse, deleveraging, deflation risk",
+      "year": "2008"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_008",
+    "event": "2010 Arab Spring",
+    "context": "The Arab Spring beginning in late 2010 triggered political upheaval across North Africa and the Middle East. Libya's civil war removed 1.6 million barrels per day of high-quality crude oil from global markets. Brent crude surged above $120 per barrel in early 2011. Egypt's instability raised concerns about Suez Canal disruptions affecting global shipping and oil transit. The political uncertainty spread to Bahrain, Syria, and Yemen, creating a sustained geopolitical risk premium across energy markets. Agricultural commodity prices also spiked due to regional food insecurity.",
+    "metadata": {
+      "category": "Political Instability",
+      "primary_commodity": "Crude Oil",
+      "macro_regime": "Geopolitical risk premium, supply disruption, food security crisis",
+      "year": "2010"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_009",
+    "event": "2014 Russia-Ukraine Crimea Annexation",
+    "context": "Russia's annexation of Crimea in March 2014 and subsequent conflict in eastern Ukraine triggered Western sanctions against Russia, one of the world's largest energy producers. Natural gas prices in Europe spiked as dependence on Russian pipeline gas became a strategic vulnerability. Wheat and corn prices surged as Ukraine and Russia together account for approximately 30% of global wheat exports. The crisis exposed European energy security vulnerabilities and accelerated diversification of gas supply routes. Agricultural commodity markets experienced sustained volatility throughout the conflict.",
+    "metadata": {
+      "category": "Geopolitical Conflict",
+      "primary_commodity": "Natural Gas",
+      "macro_regime": "Energy security crisis, agricultural supply disruption, sanctions regime",
+      "year": "2014"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_010",
+    "event": "2014-2016 Oil Price Collapse",
+    "context": "A combination of surging US shale oil production and OPEC's decision to maintain output levels in late 2014 caused crude oil prices to collapse from over $100 per barrel to below $30 by early 2016. The price crash devastated oil-exporting economies including Venezuela, Nigeria, and Russia. Commodity-linked currencies collapsed. The prolonged low-price environment forced massive capital expenditure cuts across the energy sector, setting the stage for future supply constraints. Natural gas prices also fell sharply in this period.",
+    "metadata": {
+      "category": "Energy",
+      "primary_commodity": "Crude Oil",
+      "macro_regime": "Supply glut, deflationary commodity cycle, EM currency crisis",
+      "year": "2014"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_011",
+    "event": "2018 US-China Trade War",
+    "context": "The United States imposed tariffs on $250 billion worth of Chinese goods in 2018, triggering retaliatory Chinese tariffs on US agricultural exports including soybeans, corn, and pork. US soybean prices fell over 20% as China redirected purchases to Brazil. Global supply chain disruptions affected industrial metals including steel and aluminum. The trade war created significant uncertainty across commodity markets, shifting agricultural trade flows that took years to normalize. The conflict also impacted rare earth metals critical for technology manufacturing.",
+    "metadata": {
+      "category": "Trade Conflict",
+      "primary_commodity": "Soybeans",
+      "macro_regime": "Trade war, agricultural demand shift, supply chain disruption",
+      "year": "2018"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_012",
+    "event": "2019 Saudi Aramco Abqaiq Attack",
+    "context": "Drone and cruise missile attacks on Saudi Aramco's Abqaiq processing facility in September 2019 temporarily knocked out approximately 5.7 million barrels per day of Saudi oil production, representing about 5% of global supply. Brent crude oil prices surged nearly 15% in a single day — the largest single-day percentage gain on record. The attack demonstrated the vulnerability of critical oil infrastructure to precision strikes and raised questions about the adequacy of global spare capacity. Yemen's Houthi rebels claimed responsibility though the US attributed the attack to Iran.",
+    "metadata": {
+      "category": "Infrastructure Attack",
+      "primary_commodity": "Crude Oil",
+      "macro_regime": "Supply shock, infrastructure vulnerability premium",
+      "year": "2019"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_013",
+    "event": "2019 Strait of Hormuz Tanker Attacks",
+    "context": "A series of attacks on oil tankers in the Strait of Hormuz and Gulf of Oman in 2019 created sustained geopolitical risk premium in crude oil markets. The Strait of Hormuz is the world's most important oil chokepoint, with approximately 21 million barrels per day transiting through it. Tanker insurance rates surged dramatically. Iran's seizure of a British-flagged tanker escalated tensions further. The incidents highlighted the extreme vulnerability of global energy supply to conflict in this narrow maritime passage.",
+    "metadata": {
+      "category": "Maritime Security",
+      "primary_commodity": "Crude Oil",
+      "macro_regime": "Shipping risk premium, chokepoint vulnerability",
+      "year": "2019"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_014",
+    "event": "2020 COVID-19 Pandemic Oil Crash",
+    "context": "The COVID-19 pandemic caused unprecedented collapse in global oil demand as lockdowns grounded aviation and shut down industrial activity worldwide. WTI crude oil futures turned negative for the first time in history in April 2020, trading at minus $37 per barrel as storage capacity filled to capacity. Global oil demand fell by approximately 9 million barrels per day. OPEC+ implemented historic production cuts of 9.7 million barrels per day to stabilize markets. Agricultural commodities initially fell on demand concerns before recovering on supply chain disruptions and food security fears.",
+    "metadata": {
+      "category": "Pandemic",
+      "primary_commodity": "Crude Oil",
+      "macro_regime": "Demand destruction, storage overflow, deflationary shock",
+      "year": "2020"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_015",
+    "event": "2021 Suez Canal Blockage - Ever Given",
+    "context": "The container ship Ever Given ran aground in the Suez Canal in March 2021, blocking one of the world's most important shipping lanes for six days. Approximately 12% of global trade passes through the Suez Canal daily. Oil prices rose as tankers were forced to divert around the Cape of Good Hope, adding approximately two weeks of transit time. Shipping costs surged globally. The incident exposed the fragility of just-in-time global supply chains and highlighted chokepoint risks in maritime trade routes.",
+    "metadata": {
+      "category": "Maritime Disruption",
+      "primary_commodity": "Crude Oil",
+      "macro_regime": "Supply chain disruption, shipping cost surge",
+      "year": "2021"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_016",
+    "event": "2022 Russia-Ukraine War",
+    "context": "Russia's full-scale invasion of Ukraine in February 2022 triggered the largest commodity price shock since the 1970s oil crisis. Brent crude surged above $130 per barrel. Natural gas prices in Europe rose over 500% as Russia weaponized energy supplies. Wheat prices surged 70% as Ukraine and Russia together supply 30% of global wheat exports and 20% of corn. Sunflower oil prices doubled as Ukraine produces 50% of global supply. Fertilizer prices tripled, threatening food security worldwide. Western sanctions on Russia created lasting structural shifts in global energy and agricultural trade flows.",
+    "metadata": {
+      "category": "Major War",
+      "primary_commodity": "Natural Gas",
+      "macro_regime": "Multi-commodity supershock, sanctions regime, food security crisis, energy weaponization",
+      "year": "2022"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_017",
+    "event": "2022 European Natural Gas Crisis",
+    "context": "Following the Russia-Ukraine war, Europe faced an existential natural gas supply crisis as Russia cut pipeline flows through Nord Stream and other routes. European natural gas prices surged to record highs equivalent to $500 per barrel of oil in energy terms. Germany declared an energy emergency. European industrial production was curtailed as manufacturers could not afford gas. LNG imports surged from the US, Qatar, and Norway, fundamentally reshaping global gas trade flows. Governments spent over €700 billion on energy subsidies to protect consumers and industries.",
+    "metadata": {
+      "category": "Energy Security",
+      "primary_commodity": "Natural Gas",
+      "macro_regime": "Energy crisis, industrial demand destruction, LNG trade restructuring",
+      "year": "2022"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_018",
+    "event": "2023 Hamas-Israel War and Middle East Escalation",
+    "context": "The Hamas attack on Israel on October 7, 2023 and subsequent Israeli military campaign in Gaza raised fears of broader Middle East conflict escalation. Oil markets priced in a geopolitical risk premium as concerns grew about potential Iranian involvement and disruption to regional oil flows. Brent crude rose approximately 9% in the days following the attack. Shipping in the Red Sea faced disruption threats. Gold surged above $2000 per ounce as a safe haven. The conflict raised concerns about Strait of Hormuz closure scenarios and impact on global energy markets.",
+    "metadata": {
+      "category": "Regional Conflict",
+      "primary_commodity": "Crude Oil",
+      "macro_regime": "Geopolitical risk premium, safe haven demand, shipping disruption risk",
+      "year": "2023"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_019",
+    "event": "2023-2024 Red Sea Houthi Attacks on Shipping",
+    "context": "Yemen's Houthi rebels launched sustained drone and missile attacks on commercial shipping in the Red Sea beginning late 2023, forcing major shipping lines to divert vessels around the Cape of Good Hope. Approximately 15% of global trade and 8-9% of global oil flows normally transit the Red Sea through the Bab el-Mandeb strait. Container shipping rates surged 300-400% on major routes. Oil tanker day rates spiked. The disruption added 10-14 days of transit time and significant costs to global supply chains, raising inflationary pressures worldwide.",
+    "metadata": {
+      "category": "Maritime Security",
+      "primary_commodity": "Crude Oil",
+      "macro_regime": "Shipping cost surge, supply chain disruption, inflation pressure",
+      "year": "2023"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_020",
+    "event": "2010-2012 European Sovereign Debt Crisis",
+    "context": "The European sovereign debt crisis beginning in Greece in 2010 spread to Portugal, Ireland, Italy, and Spain, threatening the stability of the eurozone. Commodity markets fell sharply on fears of European recession and demand destruction. Base metals led by copper fell 25-30%. Oil prices declined despite Middle Eastern supply disruptions. Gold surged as a safe haven and currency hedge as the euro weakened. Agricultural commodities showed mixed performance. The crisis demonstrated how financial contagion could override supply-side factors in commodity price determination.",
+    "metadata": {
+      "category": "Financial Crisis",
+      "primary_commodity": "Gold",
+      "macro_regime": "Demand destruction fears, safe haven premium, euro crisis",
+      "year": "2010"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_021",
+    "event": "2007-2008 Global Food Crisis",
+    "context": "A combination of drought in major wheat-producing regions, surging biofuel demand diverting corn from food to fuel, rising oil prices increasing agricultural input costs, and speculative activity triggered a global food price crisis in 2007-2008. Wheat prices tripled, corn doubled, and rice surged 300%. Over 30 countries imposed food export restrictions. Food riots occurred across Africa, Asia, and Latin America. The crisis exposed structural vulnerabilities in global agricultural supply chains and the complex interconnections between energy and food commodity markets.",
+    "metadata": {
+      "category": "Agricultural",
+      "primary_commodity": "Wheat",
+      "macro_regime": "Food security crisis, agricultural commodity supercycle",
+      "year": "2007"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_022",
+    "event": "2011 Fukushima Nuclear Disaster",
+    "context": "The March 2011 earthquake and tsunami that triggered the Fukushima Daiichi nuclear disaster caused Japan to shut down its entire nuclear power fleet of 54 reactors. Japan was forced to dramatically increase imports of LNG, coal, and oil to replace lost nuclear generation capacity. Asian LNG spot prices surged, creating the Japan-Korea Marker premium that persisted for years. Coal prices rose substantially as Asian utilities switched to coal generation. Uranium prices collapsed. The disaster permanently shifted global energy policy away from nuclear in several major economies.",
+    "metadata": {
+      "category": "Nuclear/Energy",
+      "primary_commodity": "Natural Gas",
+      "macro_regime": "LNG demand surge, coal demand spike, nuclear policy shift",
+      "year": "2011"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_023",
+    "event": "2015-2016 China Economic Slowdown",
+    "context": "China's economic slowdown and stock market crash in 2015-2016 triggered a broad commodity price collapse as markets reassessed the sustainability of Chinese demand growth that had driven the commodity supercycle. Iron ore prices fell below $40 per tonne from highs above $180. Copper fell to six-year lows. Coal prices collapsed. Oil demand growth expectations were significantly reduced. The slowdown revealed the extreme degree to which global commodity markets had become dependent on Chinese demand growth, and the systemic risk this concentration represented.",
+    "metadata": {
+      "category": "Economic Slowdown",
+      "primary_commodity": "Iron Ore",
+      "macro_regime": "Commodity supercycle end, demand growth repricing, EM stress",
+      "year": "2015"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_024",
+    "event": "2021-2022 Global Semiconductor Shortage",
+    "context": "A combination of COVID-19 pandemic demand surge for electronics, supply chain disruptions, and underinvestment in chip manufacturing capacity created a global semiconductor shortage beginning in 2021. Automobile production was cut by millions of units globally as automakers could not source chips. Industrial production across multiple sectors was constrained. Prices for palladium, used in catalytic converters, surged as auto production schedules were disrupted. The crisis highlighted concentration of advanced semiconductor manufacturing in Taiwan and the geopolitical risks this represents.",
+    "metadata": {
+      "category": "Technology Supply Chain",
+      "primary_commodity": "Palladium",
+      "macro_regime": "Supply chain crisis, industrial disruption, tech deglobalization",
+      "year": "2021"
+    }
+  },
+  {
+    "crisis_id": "CRISIS_025",
+    "event": "2009 Indian Drought and Agricultural Crisis",
+    "context": "India experienced its worst monsoon failure in nearly four decades in 2009, with rainfall 23% below normal. Agricultural production of key crops including rice, pulses, and oilseeds fell significantly. India, one of the world's largest agricultural producers and consumers, faced domestic food price inflation exceeding 20%. The drought forced India to reduce agricultural exports and increase imports, affecting global commodity markets for wheat, rice, and sugar. Water scarcity affected urban and rural populations across multiple states, triggering social unrest and highlighting the vulnerability of rain-fed agriculture to climate variability.",
+    "metadata": {
+      "category": "Agricultural",
+      "primary_commodity": "Wheat",
+      "macro_regime": "Food inflation, agricultural supply disruption, import demand surge",
+      "year": "2009"
+    }
+  }
+]
