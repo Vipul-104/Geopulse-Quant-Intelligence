@@ -1,0 +1,11 @@
+crewai
+chromadb
+sentence-transformers
+python-dotenv
+streamlit
+pydantic
+plotly
+litellm
+reportlab
+tenacity
+requests
