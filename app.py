@@ -28,6 +28,7 @@ import plotly.graph_objects as go
 from src.crew import GeoPulseIntelligenceCrew
 from src.db import GeopoliticalVectorStore
 from src.models import IntelligenceBriefing, RiskLevel, ConfidenceLevel, PriceDirection
+from src.news_feed import fetch_live_headlines
 
 # ─────────────────────────────────────────────
 # Page config
@@ -86,10 +87,13 @@ def chip(text: str, color: str = "#374151") -> str:
 # ─────────────────────────────────────────────
 # Session state
 # ─────────────────────────────────────────────
+@st.cache_resource
+def get_crew_engine():
+    return GeoPulseIntelligenceCrew()
 
 if "crew_engine" not in st.session_state:
-    st.session_state.crew_engine = GeoPulseIntelligenceCrew()
-
+    st.session_state.crew_engine = get_crew_engine()
+    
 if "history" not in st.session_state:
     st.session_state.history: list[IntelligenceBriefing] = []
 
@@ -151,9 +155,27 @@ st.markdown(
 # Input
 # ─────────────────────────────────────────────
 
+with st.expander("🛰️ Fetch live headlines (GDELT)", expanded=False):
+    if st.button("🔄 Pull latest geopolitical/commodity headlines"):
+        with st.spinner("Querying GDELT live news feed..."):
+            try:
+                st.session_state.live_headlines = fetch_live_headlines(max_results=10)
+                if not st.session_state.live_headlines:
+                    st.info("No matching headlines returned right now — try again shortly.")
+            except RuntimeError as e:
+                st.error(f"Live feed error: {e}")
+                st.session_state.live_headlines = []
+
+    if st.session_state.get("live_headlines"):
+        options = [h["title"] for h in st.session_state.live_headlines]
+        picked = st.selectbox("Select a live headline to load into the dispatch box:", options)
+        if st.button("📥 Load selected headline"):
+            st.session_state.loaded_headline = picked
+
 user_headline = st.text_area(
     "📥 INCOMING COMMAND DISPATCH / BREAKING GEOPOLITICAL FLASH:",
     height=120,
+    value=st.session_state.get("loaded_headline", ""),
     placeholder=(
         "e.g. Unidentified drone activity forces sudden shipping halts "
         "near critical maritime channels in the Strait of Hormuz..."

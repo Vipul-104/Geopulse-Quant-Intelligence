@@ -5,3 +5,7 @@ python-dotenv
 streamlit
 pydantic
 plotly
+litellm
+reportlab
+tenacity
+requests

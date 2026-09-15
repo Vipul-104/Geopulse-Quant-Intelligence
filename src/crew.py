@@ -29,7 +29,18 @@ except Exception:
     pass
 
 from crewai import Agent, Task, Crew, Process, LLM
-from dotenv import load_dotenv
+from dotenv import load_dotenv  
+from litellm.exceptions import RateLimitError, APIConnectionError, ServiceUnavailableError
+from tenacity import (
+    retry,
+    stop_after_attempt,
+    wait_exponential,
+    retry_if_exception_type,
+    before_sleep_log,
+)
+import logging
+
+logger = logging.getLogger(__name__)
 
 from src.db import GeopoliticalVectorStore
 from src.models import (
@@ -166,7 +177,7 @@ def _format_rag_context(matches: list[dict]) -> str:
 class GeoPulseIntelligenceCrew:
     def __init__(self):
         self.llm = LLM(
-            model="openai/llama-3.3-70b-versatile",
+            model="groq/openai/gpt-oss-20b",
             base_url="https://api.groq.com/openai/v1",
             api_key=os.environ.get("GROQ_API_KEY"),
             temperature=0.15,   # lower = more consistent structured output
@@ -326,7 +337,27 @@ OUTPUT FORMAT — respond with ONLY valid JSON, no prose before or after:
         return historian_task, quant_task, synthesizer_task
 
     # ── Core pipeline ─────────────────────────────────────────────────────────
+   # ── Retry-wrapped crew execution ─────────────────────────────────────────
 
+    @retry(
+        stop=stop_after_attempt(4),
+        wait=wait_exponential(multiplier=2, min=2, max=60),
+        retry=retry_if_exception_type(
+            (RateLimitError, APIConnectionError, ServiceUnavailableError)
+        ),
+        before_sleep=before_sleep_log(logger, logging.WARNING),
+        reraise=True,
+        )
+    
+    def _kickoff_with_retry(self, crew: Crew):
+        """
+        Run crew.kickoff() with exponential backoff on transient LLM errors
+        (rate limits, connection drops, provider outages).
+        Attempts: 4 total. Waits: 2s, 4s, 8s ... capped at 60s.
+        """
+        return crew.kickoff()
+    
+    
     def run_analysis(self, breaking_headline: str) -> IntelligenceBriefing:
         """
         Full pipeline: RAG retrieval → 3-agent sequential crew → structured output.
@@ -356,7 +387,15 @@ OUTPUT FORMAT — respond with ONLY valid JSON, no prose before or after:
             tasks=[h_task, q_task, s_task],
             process=Process.sequential,
         )
-        crew_result = crew.kickoff()
+        # crew_result = crew.kickoff()
+        try:
+            crew_result = self._kickoff_with_retry(crew)
+        except (RateLimitError, APIConnectionError, ServiceUnavailableError) as e:
+            logger.error(f"LLM call failed after all retries: {e}")
+            raise RuntimeError(
+                "The analysis engine is temporarily rate-limited or unreachable. "
+                "Please wait a minute and try again."
+            ) from e
 
         # 5. Parse task outputs into Pydantic models
         geo_data   = _extract_json(str(h_task.output))
